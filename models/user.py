@@ -28,4 +28,3 @@ class User:
     def password(self):
         return self._password
 
-    
