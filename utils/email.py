@@ -1,9 +1,13 @@
+import logging
+
 from email_validator import validate_email, EmailNotValidError
+
+logger = logging.getLogger('anubis')
 
 
 def validity_mail(email):
     try:
-        response = validate_email(email)
+        validate_email(email)
         return True
     except EmailNotValidError as e:
-        print(str(e))
+        logger.error(str(e))

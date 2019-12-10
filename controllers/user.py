@@ -1,20 +1,35 @@
+import logging
+
 from models.user import User
-from utils import validity_mail
+from utils.email import validity_mail
+from utils.crypto import hash_password
+
+logger = logging.getLogger('anubis')
 
 
 class UserController:
-    def create_user(self, email, pwd, username=None):
-        if validity_mail(email):
+    def __init__(self, email, pwd):
+        self._email = email
+        self._pwd = pwd
+
+    async def create_user(self, username=None):
+        ok = False
+        message = 'Email is not valid'
+        if validity_mail(self._email):
+            logger.info(f'Creating user: {self._email}')
             user = User()
-            user.email = email
-            user.password = pwd
+            user.email = self._email
+            user.password = hash_password(self._pwd)
             user.username = username
             try:
                 user.save()
+                message = f'User {self._email} created successfully'
+                ok = True
+                logger.info(message)
+                return ok, message
             except Exception as error:
-                print(error)
+                message = f'User could not created for this reason: {error}'
+                logger.error(message)
+                return ok, message
         else:
-            return None, 'email is not valid'
-
-
-
+            return ok, message
