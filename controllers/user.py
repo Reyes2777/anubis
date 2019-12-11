@@ -8,7 +8,7 @@ logger = logging.getLogger('anubis')
 
 
 class UserController:
-    def __init__(self, email, pwd):
+    def __init__(self, email=None, pwd=None):
         self._email = email
         self._pwd = pwd
 
@@ -33,3 +33,11 @@ class UserController:
                 return ok, message
         else:
             return ok, message
+
+    async def get_user(self):
+        user = User.objects(email=self._email).first()
+        if user:
+            logger.info(f'User {self._email} found')
+            return user
+        else:
+            logger.info(f'User {self._email} not found')

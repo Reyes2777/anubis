@@ -11,7 +11,6 @@ def hash_password(pwd):
 
 
 def verify_password(stored_pwd, provided_pwd):
-    """Verify a stored password against one provided by user"""
     salt = stored_pwd[:64]
     stored_password = stored_pwd[64:]
     pwdhash = hashlib.pbkdf2_hmac('sha512', provided_pwd.encode('utf-8'), salt.encode('ascii'), 100000)

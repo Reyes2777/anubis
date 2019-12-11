@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5be1a48a-9bfb-4eb9-94c4-8235b6035092" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/utils/crypto.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentication/users/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.py" beforeDir="false" afterPath="$PROJECT_DIR$/db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/crypto.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/crypto.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,9 +104,9 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="154" y="173" width="642" height="765" key="#__init__/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1575851518850" />
-    <state x="144" y="216" width="662" height="679" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1575852031322">
+    <state x="144" y="216" width="662" height="679" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1576031143089">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="144" y="216" width="662" height="679" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1575852031322" />
+    <state x="144" y="216" width="662" height="679" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1920.1053/1920.0.1366.768@0.27.1920.1053" timestamp="1576031143089" />
   </component>
 </project>
